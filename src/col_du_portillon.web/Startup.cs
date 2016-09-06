@@ -23,6 +23,9 @@ namespace col_du_portillon.web
         {
             loggerFactory.AddConsole();
 
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
