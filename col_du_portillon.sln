@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B6425071-E693-4D66-9EA1-8A194A1B33A3}"
 	ProjectSection(SolutionItems) = preProject
 		global.json = global.json
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "col_du_portillon.web", "src\col_du_portillon.web\col_du_portillon.web.xproj", "{294EE3DF-CBBA-46CE-944A-FCE2A15723EB}"
