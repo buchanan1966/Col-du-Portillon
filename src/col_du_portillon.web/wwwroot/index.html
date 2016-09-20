@@ -8,6 +8,17 @@
 
     <script src="dist/jquery/jquery.js"></script>
     <script src="dist/foundation/foundation.js"></script>
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <script src="dist/core-js/client/shim.min.js"></script>
+    <script src="dist/zone.js/dist/zone.js"></script>
+    <script src="dist/reflect-metadata/Reflect.js"></script>
+    <script src="dist/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function (err) { console.error(err); });
+    </script>
 </head>
 <body>
     <header class="header">
@@ -16,8 +27,8 @@
         </h1>
         <ul class="header-subnav">
             <li><a href="/" class="is-active">Home</a></li>
-<!--            <li><a href="#">BLAH</a></li>-->
-<!--            <li><a href="#">BLAH!</a></li>-->
+            <!--            <li><a href="#">BLAH</a></li>-->
+            <!--            <li><a href="#">BLAH!</a></li>-->
         </ul>
     </header>
     <h2>Welcome to my journal!</h2>
@@ -41,5 +52,6 @@
             </tr>
         </tbody>
     </table>
+    <my-app>Loading...</my-app>
 </body>
 </html>
